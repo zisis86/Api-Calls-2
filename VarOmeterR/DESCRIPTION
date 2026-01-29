@@ -1,0 +1,16 @@
+Package: VarOmeterR
+Title: R Client for VarOmeter Platform APIs
+Version: 0.0.1
+Authors@R:
+    person("Dimitris", "Zisis", email = "dzisis1986@gmail.com", role = c("aut", "cre"))
+Description: R wrapper around the platform APIs for creating projects,
+    creating VarOmeter experiments, running them, and retrieving results.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    httr2,
+    jsonlite,
+    cli,
+    rlang

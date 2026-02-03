@@ -29,7 +29,7 @@ With VarOmeter you can:
 
 - Create and manage VarOmeter projects
 - Upload and process biological datasets
-- Run enrichment and gene prioritization experiments
+- Run Varometer experiments
 - Retrieve and store analysis results locally
 - Interactively explore results using a DAG-based viewer
 

@@ -65,18 +65,19 @@ devtools::install_local(".")
 
 
 ## Authentication
-
+```r
 api_key <- "YOUR_API_KEY_HERE"
 
 headers <- varometer_headers(api_key)
 headers
-
 Sys.setenv(ENIOS_API_KEY = api_key)
-
+```
 ## Base URL
+```r
 options(varometer.base_url = "https://bim3.e-nios.com")
-
+```
 ## Example using a VCF as input
+```r
 library(VarOmeterR)
 
 api_key <- "YOUR_API_KEY_HERE"
@@ -115,10 +116,11 @@ experiment_id <- extract_id(e, c("id","experimentId","gwasExperimentId"))
 # 4) Run + wait
 final <- run_varometer_wait(experiment_id, poll_seconds = 5, timeout_seconds = 600)
 final
-
+```
 
 
 ##Real example with vcf 
+```r
 library(VarOmeterR)
 
 api_key <- "leq3vxq1812k4of6xrbdy2ekj43u4up3"
@@ -152,7 +154,7 @@ experiment_id <- extract_id(e, c("id","experimentId","gwasExperimentId"))
 
 final <- run_varometer_wait(experiment_id)
 str(final, max.level = 2)
-
+```
 
 ## Contact
 
